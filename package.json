@@ -1,0 +1,19 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio to link my projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcarrasco93/my-portfolio.git"
+  },
+  "author": "Alex Carrasco Salvador",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcarrasco93/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/alexcarrasco93/my-portfolio#readme"
+}
