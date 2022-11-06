@@ -6,24 +6,50 @@
         @include m.grid(1, 2rem);
 
         @include m.desktop {
-            @include m.grid(2, 2rem);
+            @include m.grid(2, 4rem);
         }
     }
 }
 
 .project {
-    @include m.grid(2, 2rem);
+    box-shadow: 0px 0px 15px 3px rgb(0, 0, 0, .10);
+    align-items: center;
+    padding: 1rem;
+
+    @include m.phone {
+
+        @include m.grid(2, 2rem);
+    }
+
+    &__img-link {
+        border: 1px solid lighten(v.$lightGrey, 3%);
+
+        @include m.phone {
+            display: inline-block;
+        }
+    }
 
     &__img {
         width: 30rem;
+        margin: 0 auto;
     }
 
-    &__name, 
-    &__distance {
-        margin: 0;
+    &__name,
+    &__description {
+        text-align: center;
+        margin: 0 0 1rem 0;
+
+        @include m.phone {
+            text-align: left;
+        }
     }
 
     &__link {
-        @include m.btn(v.$white, v.$secondary);
+        @include m.btn(v.$white, v.$primary);
+        display: block;
+
+        @include m.tablet {
+            display: block;
+        }
     }
 }
