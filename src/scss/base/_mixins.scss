@@ -50,3 +50,18 @@
     gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
 }
+
+@mixin headingBorder($colorText, $colorLine) {
+    font-size: 3.6rem;
+    display: inline-block;
+    color: $colorText;
+
+    &::after {
+        content: '';
+        background-color: $colorLine;
+        height: 1rem;
+        width: calc(100% + 1rem);
+        display: block;
+        margin: -1.9rem 0 0 0;
+    }
+}

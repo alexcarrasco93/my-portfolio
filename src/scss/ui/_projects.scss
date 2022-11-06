@@ -2,6 +2,10 @@
 @use 'base/mixins' as m;
 
 .projects {
+    &__heading {
+        @include m.headingBorder(v.$black, v.$secondary);
+
+    }
     &__list {
         @include m.grid(1, 2rem);
 
@@ -12,6 +16,7 @@
 }
 
 .project {
+    background-color: v.$white;
     box-shadow: 0px 0px 15px 3px rgb(0, 0, 0, .10);
     align-items: center;
     padding: 1rem;

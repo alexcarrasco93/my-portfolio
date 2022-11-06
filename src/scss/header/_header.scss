@@ -7,5 +7,26 @@
     &__heading {
         margin: 0;
         text-align: center;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: 15rem;
+            background-image: url(../img/alex.jpg);
+            background-size: cover;
+            background-position: center center;
+            margin: 0 auto 2rem auto;
+
+
+            // content: '';
+            // background-repeat: no-repeat;
+            // // background-size: 3rem;
+            // width: 3rem;
+            // height: 3rem;
+            // // position: absolute;
+            // top: 3.5rem;
+            // left: 2rem;
+        }
     }
 }
