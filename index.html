@@ -217,8 +217,11 @@
     </main>
 
     <script>
-        const list = document.querySelector(".projects__list");
-        Array.from(list.children).reverse().forEach(element =>list.appendChild(element));
+        const lists = document.querySelectorAll(".projects__list");
+        for (let i = 0; i < lists.length; i++) {
+            const list = lists[i];
+            Array.from(list.children).reverse().forEach(element =>list.appendChild(element));
+        }
     </script>
 </body>
 
