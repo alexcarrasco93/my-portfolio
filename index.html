@@ -18,13 +18,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c09654e5a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="build/css/app.css">
-
 </head>
 
 <body>
     <header class="header">
         <h1 class="header__heading">Alex Carrasco Salvador</h1>
+        <div class="header__links">
+            <a href="https://www.linkedin.com/in/alexcarrascosalvador/" class="header__link" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/alexcarrasco93" class="header__link" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+        </div>
     </header>
     <main class="projects section">
         <div class="projects__grid container">
@@ -45,6 +53,40 @@
                         <h3 class="project__name">Kanban Fire</h3>
                         <p class="project__description">Building a web application with Angular and Firebase</p>
                         <a href="https://kanbanfire-7695a.web.app/" class="project__link" target="_blank">Go to the website</a>
+                    </div>
+                </li>
+                <li class="project">
+                    <div class="project__img-container">
+                        <a class="project__img-link" target="_blank" href="https://ingreso-egreso-app-38747.web.app/">
+                            <picture>
+                                <source srcset="build/img/ingreso-egreso.avif" type="image/avif">
+                                <source srcset="build/img/ingreso-egreso.webp" type="image/webp">
+                                <img class="project__img" loading="lazy" src="build/img/ingreso-egreso.png" alt="project image">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <div class="project__info">
+                        <h3 class="project__name">Ingreso Egreso App</h3>
+                        <p class="project__description">Learning the Redux pattern and applying it to create applications with ngrx, store, devtools, effects, firebase</p>
+                        <a href="https://ingreso-egreso-app-38747.web.app/" class="project__link" target="_blank">Go to the website</a>
+                    </div>
+                </li>
+                <li class="project">
+                    <div class="project__img-container">
+                        <a class="project__img-link" target="_blank" href="https://rick-and-morty-nx.web.app/">
+                            <picture>
+                                <source srcset="build/img/rick-and-morty.avif" type="image/avif">
+                                <source srcset="build/img/rick-and-morty.webp" type="image/webp">
+                                <img class="project__img" loading="lazy" src="build/img/rick-and-morty.png" alt="project image">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <div class="project__info">
+                        <h3 class="project__name">Rick & Morty</h3>
+                        <p class="project__description">Building an Angular project with Nx</p>
+                        <a href="https://rick-and-morty-nx.web.app/" class="project__link" target="_blank">Go to the website</a>
                     </div>
                 </li>
             </ul>
