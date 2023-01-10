@@ -6,6 +6,7 @@
         @include m.headingBorder(v.$black, v.$secondary);
 
     }
+
     &__list {
         @include m.grid(1, 2rem);
 
@@ -37,6 +38,10 @@
     &__img {
         width: 30rem;
         margin: 0 auto;
+    }
+
+    &__links {
+        display: flex;
     }
 
     &__name,
